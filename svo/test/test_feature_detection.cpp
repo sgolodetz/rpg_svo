@@ -21,7 +21,7 @@
 #include <svo/feature_detection.h>
 #include <svo/depth_filter.h>
 #include <svo/feature.h>
-#include <vikit/timer.h>
+//#include <vikit/timer.h>
 #include <vikit/vision.h>
 #include <vikit/abstract_camera.h>
 #include <vikit/atan_camera.h>

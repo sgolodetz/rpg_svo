@@ -20,7 +20,7 @@
 #include <queue>
 #include <boost/thread.hpp>
 #include <boost/function.hpp>
-#include <vikit/performance_monitor.h>
+//#include <vikit/performance_monitor.h>
 #include <svo/global.h>
 #include <svo/feature_detection.h>
 #include <svo/matcher.h>
@@ -28,7 +28,7 @@
 namespace svo {
 
 class Frame;
-class Feature;
+struct Feature;
 class Point;
 
 /// A seed is a probabilistic depth estimate for a single pixel.
@@ -148,7 +148,7 @@ protected:
   bool new_keyframe_set_;               //!< Do we have a new keyframe to process?.
   double new_keyframe_min_depth_;       //!< Minimum depth in the new keyframe. Used for range in new seeds.
   double new_keyframe_mean_depth_;      //!< Maximum depth in the new keyframe. Used for range in new seeds.
-  vk::PerformanceMonitor permon_;       //!< Separate performance monitor since the DepthFilter runs in a parallel thread.
+  //vk::PerformanceMonitor permon_;       //!< Separate performance monitor since the DepthFilter runs in a parallel thread.
   Matcher matcher_;
 
   /// Initialize new seeds from a frame.

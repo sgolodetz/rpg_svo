@@ -25,7 +25,7 @@
 namespace svo {
 
 class Point;
-class Feature;
+struct Feature;
 class Seed;
 
 /// Container for converged 3D points that are not already assigned to two keyframes.

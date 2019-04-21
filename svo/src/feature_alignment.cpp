@@ -42,7 +42,7 @@ bool align1D(
   bool converged=false;
 
   // compute derivative of template and prepare inverse compositional
-  float __attribute__((__aligned__(16))) ref_patch_dv[patch_area];
+  __declspec(align(16)) float /*__attribute__((__aligned__(16)))*/ ref_patch_dv[patch_area];
   Matrix2f H; H.setZero();
 
   // compute gradient and hessian
@@ -165,8 +165,8 @@ bool align2D(
   bool converged=false;
 
   // compute derivative of template and prepare inverse compositional
-  float __attribute__((__aligned__(16))) ref_patch_dx[patch_area_];
-  float __attribute__((__aligned__(16))) ref_patch_dy[patch_area_];
+  __declspec(align(16)) float /*__attribute__((__aligned__(16)))*/ ref_patch_dx[patch_area_];
+  __declspec(align(16)) float /*__attribute__((__aligned__(16)))*/ ref_patch_dy[patch_area_];
   Matrix3f H; H.setZero();
 
   // compute gradient and hessian
@@ -293,8 +293,8 @@ bool align2D_SSE2(
   const int W_BITS = 14;
 
   // compute derivative of template and prepare inverse compositional
-  int16_t __attribute__((__aligned__(16))) ref_patch_dx[patch_area];
-  int16_t __attribute__((__aligned__(16))) ref_patch_dy[patch_area];
+  __declspec(align(16)) int16_t /*__attribute__((__aligned__(16)))*/ ref_patch_dx[patch_area];
+  __declspec(align(16)) int16_t /*__attribute__((__aligned__(16)))*/ ref_patch_dy[patch_area];
 
   // compute gradient and hessian
   const int ref_step = patch_size+2;
@@ -459,8 +459,8 @@ bool align2D_NEON (
   const int W_BITS = 14;
 
   // compute derivative of template and prepare inverse compositional
-  int16_t __attribute__((__aligned__(16))) ref_patch_dx[patch_area];
-  int16_t __attribute__((__aligned__(16))) ref_patch_dy[patch_area];
+  __declspec(align(16)) int16_t /*__attribute__((__aligned__(16)))*/ ref_patch_dx[patch_area];
+  __declspec(align(16)) int16_t /*__attribute__((__aligned__(16)))*/ ref_patch_dy[patch_area];
   
   // compute gradient and hessian
   const int ref_step = patch_size+2;

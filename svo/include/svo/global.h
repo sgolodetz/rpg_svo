@@ -27,7 +27,7 @@
 #include <Eigen/Core>
 #include <opencv2/opencv.hpp>
 #include <sophus/se3.h>
-#include <vikit/performance_monitor.h>
+//#include <vikit/performance_monitor.h>
 #include <boost/shared_ptr.hpp>
 #include<Eigen/StdVector>
 #ifndef RPG_SVO_VIKIT_IS_VECTOR_SPECIALIZED //Guard for rpg_vikit

@@ -26,7 +26,7 @@
 #include <vikit/math_utils.h>
 #include <vikit/file_reader.h>
 #include <vikit/blender_utils.h>
-#include <vikit/timer.h>
+//#include <vikit/timer.h>
 #include <iostream>
 #include <svo/feature_detection.h>
 #include <svo/depth_filter.h>

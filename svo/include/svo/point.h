@@ -27,7 +27,7 @@ typedef g2o::VertexSBAPointXYZ g2oPoint;
 
 namespace svo {
 
-class Feature;
+struct Feature;
 
 typedef Matrix<double, 2, 3> Matrix23d;
 

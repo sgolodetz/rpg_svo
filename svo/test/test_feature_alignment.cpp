@@ -17,7 +17,7 @@
 #include <string.h>
 #include <svo/global.h>
 #include <svo/feature_alignment.h>
-#include <vikit/timer.h>
+//#include <vikit/timer.h>
 #include <vikit/aligned_mem.h>
 #include "test_utils.h"
 #if __ARM_NEON__

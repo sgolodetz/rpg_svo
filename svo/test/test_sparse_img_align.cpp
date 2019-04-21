@@ -17,7 +17,7 @@
 #include <vikit/pinhole_camera.h>
 #include <vikit/math_utils.h>
 #include <vikit/file_reader.h>
-#include <vikit/timer.h>
+//#include <vikit/timer.h>
 #include <vikit/blender_utils.h>
 #include <iostream>
 #include <svo/feature_detection.h>

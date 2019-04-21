@@ -98,7 +98,7 @@ bool FrameHandlerBase::startFrameProcessingCommon(const double timestamp)
   SVO_LOG(timestamp);
   SVO_DEBUG_STREAM("New Frame");
   SVO_START_TIMER("tot_time");
-  timer_.start();
+  //timer_.start();
 
   // some cleanup from last iteration, can't do before because of visualization
   map_.emptyTrash();
@@ -114,7 +114,7 @@ int FrameHandlerBase::finishFrameProcessingCommon(
   SVO_LOG(dropout);
 
   // save processing time to calculate fps
-  acc_frame_timings_.push_back(timer_.stop());
+  //acc_frame_timings_.push_back(timer_.stop());
   if(stage_ == STAGE_DEFAULT_FRAME)
     acc_num_obs_.push_back(num_observations);
   num_obs_last_ = num_observations;

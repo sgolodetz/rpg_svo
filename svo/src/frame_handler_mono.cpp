@@ -22,7 +22,7 @@
 #include <svo/point.h>
 #include <svo/pose_optimizer.h>
 #include <svo/sparse_img_align.h>
-#include <vikit/performance_monitor.h>
+//#include <vikit/performance_monitor.h>
 #include <svo/depth_filter.h>
 #ifdef USE_BUNDLE_ADJUSTMENT
 #include <svo/bundle_adjustment.h>

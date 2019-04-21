@@ -26,7 +26,7 @@
 #include <boost/thread.hpp>
 #include <vikit/abstract_camera.h>
 #include <vikit/math_utils.h>
-#include <vikit/timer.h>
+//#include <vikit/timer.h>
 
 namespace svo {
 
